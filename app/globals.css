@@ -1,0 +1,142 @@
+/* 공동 */
+
+*{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(249, 250, 255);
+  
+}
+.navbar{
+  height: 4rem;
+  background-color: black;
+  padding-right: 3rem;
+  line-height: 4rem;
+}
+.navbar ul{
+  display:flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.navbar ul li{
+  color: white;
+}
+.btn{
+  display: flex
+}
+/* 리스트 페이지 CSS*/
+.list-bg{
+ margin: auto 30rem;
+}
+.line{
+  width: 100%;
+  border: 2px solid;
+  background: black;
+}
+.board-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  
+}
+.list-item{
+  display: flex;
+  border: 1px solid rgb(185, 185, 185);
+  background-color: white;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  color: black;
+  box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+}
+.list-item:hover{
+  background-color: rgba(241, 240, 240, 0.925);
+}
+.list-item:hover .list-title{
+  text-decoration: underline;
+}
+.list-title{
+  width: 60%;
+}
+.list-btn{
+  width: 10rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #222;
+  cursor: pointer;
+  float: right;
+}
+
+/*detail 페이지 CSS*/
+.detail-item{
+  margin-top: 3rem;
+  background-color: white;
+  padding: 1rem 1rem;
+  height: 40rem;
+  border-radius: 0.5rem;
+}
+
+/*write 페이지 CSS */
+.write-title {
+  margin-top: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  height: 5rem;
+  font-size: 24px;
+  background-color: rgb(247, 247, 247);
+  opacity: 0.7;
+  border: 1px solid rgb(204, 203, 203);
+  box-sizing: border-box;
+}
+.write-content{
+  margin-top: 1rem;
+  width: 100%;
+  height: 4rem;
+  border: none;
+  padding: 1rem 2rem;
+  height: 30rem;
+  box-sizing: border-box;
+  line-height: 1rem;
+  vertical-align: top;
+  box-shadow: 0 3px 1px rgba(0,0,0,.12), 0 1px 1px 1px rgba(0,0,0,.16);
+}
+.write-btn{
+  width: 15rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #222;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+
+
+/* Login 페이지 CSS */
+
+.login-title{
+  margin-top: 5rem;
+  text-align: center;
+}
+.login-bg{
+  margin: 0 auto;
+  width: 23rem;
+  height: 17rem;
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 0 5px 8px 0 rgba(68,68,68,.04);
+}
+.login-form{
+  margin-top: 3rem;
+}
+.login-input{
+  display: block;
+  width: 15rem;
+  height: 2.5rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  opacity: 0.7;
+  border: 1px solid rgb(212, 211, 211);
+  box-shadow: 0 2px 6px 0 rgba(68,68,68,.08);
+}
