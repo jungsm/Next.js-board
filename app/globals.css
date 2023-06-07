@@ -41,6 +41,13 @@ body{
   margin: 0 2rem;
   
 }
+.LoginBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
 .list-item{
   display: flex;
   border: 1px solid rgb(185, 185, 185);
