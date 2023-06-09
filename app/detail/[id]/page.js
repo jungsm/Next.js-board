@@ -2,11 +2,15 @@ import { connectDB } from "@/util/database"
 import { ObjectId } from "mongodb"
 import Link from "next/link"
 import Delete from "./Delete"
+
 export default async function Detail(props) {
+
+
 
     const db = (await connectDB).db("forum")
     let result = await db.collection('post').findOne({ _id : new
         ObjectId(props.params.id)})
+        console.log(result)
       
     return (
         <div className="list-bg">
