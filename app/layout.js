@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import LogIn from './Components/LogIn'
 import LogOut from './Components/LogOut'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '@/pages/api/auth/[...nextauth]'
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,12 +23,18 @@ export default async function RootLayout({ children }) {
           <Link href="/list">
           <li>홈</li>
           </Link>
+          </ul>
+          <ul className='navbar-right'>
         <li>
           {
             seesion
-            ? <span>{seesion.user.name}<LogOut /></span>
-            : <LogIn></LogIn>
+            ? <span>{seesion.user.name}&nbsp; <LogOut /></span>
+            : <span><LogIn /> <Link href={'/login'}> <span>/ 회원가입</span></Link> </span>
           }
+        </li>
+        <li>
+          
+         
         </li>
         </ul>
         </div>

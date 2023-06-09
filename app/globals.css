@@ -10,17 +10,24 @@ body{
   
 }
 .navbar{
+  display: flex;
   height: 4rem;
   background-color: black;
-  padding-right: 3rem;
-  line-height: 4rem;
-}
-.navbar ul{
-  display:flex;
-  list-style: none;
+  line-height: 2rem;
   justify-content: space-around;
 }
+.navbar ul{
+  list-style: none;
+}
 .navbar ul li{
+  color: white;
+}
+.navbar-right{
+  display: flex;
+  cursor: pointer;
+  color: white;
+}
+.navbar-right span{
   color: white;
 }
 .btn{
@@ -34,6 +41,9 @@ body{
   width: 100%;
   border: 2px solid;
   background: black;
+}
+.login{
+  float: end;
 }
 .board-item{
   display: flex;
@@ -57,15 +67,13 @@ body{
   padding: 1rem 3rem;
   color: black;
   box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+  justify-content: space-between;
 }
 .list-item:hover{
   background-color: rgba(241, 240, 240, 0.925);
 }
 .list-item:hover .list-title{
   text-decoration: underline;
-}
-.list-title{
-  width: 60%;
 }
 .list-btn{
   width: 10rem;

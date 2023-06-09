@@ -1,6 +1,9 @@
 import { connectDB } from "@/util/database"
 import Link from "next/link"
 import ListItem from "./ListItem"
+
+
+
 export default async function list() {
 
   const db = (await connectDB).db("forum")
@@ -12,6 +15,7 @@ export default async function list() {
         <h1>자유 게시판</h1>
       <div className="line"></div>
       <div className="board-item">
+        <h2>작성자</h2>
         <h2>제목</h2>
         <h2 className="board-time">작성일</h2>
       </div>
