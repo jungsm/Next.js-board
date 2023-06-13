@@ -5,7 +5,7 @@ import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
 
 export default async function handler(요청,응답){
-    
+
     if (요청.method == 'POST'){
         let seesion = await getServerSession(요청,응답, authOptions)
        
