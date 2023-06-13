@@ -19,6 +19,7 @@ export default async function write(){
                 <input className="write-title" name="title" placeholder="제목 입력" ></input>
                 <textarea className="write-content" name="content" placeholder="내용을 입력하세요"></textarea>
                 <textarea style={{display:'none'}} className="write-content" name="role" defaultValue={seesion.user.role} ></textarea>
+                <textarea style={{display:'none'}} className="write-content" name="name" defaultValue={seesion.user.name} ></textarea>
                 <div className="btn">
                 <button className="write-btn" type="submit">확인</button>
                 </div>
