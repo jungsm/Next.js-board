@@ -7,8 +7,7 @@ export default async function write(){
 
 
     let seesion = await getServerSession(authOptions)
-
-    console.log(seesion.role)
+    console.log(seesion)
     return (
         
         <div className="list-bg">

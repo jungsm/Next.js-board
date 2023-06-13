@@ -16,7 +16,7 @@ body{
   line-height: 2rem;
   justify-content: space-around;
 }
-.navbar ul{
+ul{
   list-style: none;
 }
 .navbar ul li{
@@ -35,7 +35,7 @@ body{
 }
 /* 리스트 페이지 CSS*/
 .list-bg{
- margin: auto 30rem;
+ margin: auto 20rem;
 }
 .line{
   width: 100%;
@@ -47,9 +47,13 @@ body{
 }
 .board-item{
   display: flex;
-  justify-content: space-between;
-  margin: 0 2rem;
-  
+}
+.board-item li{
+  width: 10%;
+}
+.board-item li:nth-child(2){
+  width: 73%;
+  text-align: center;
 }
 .LoginBtn{
   border: none;
@@ -64,10 +68,15 @@ body{
   background-color: white;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 3.5rem;
   color: black;
   box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
-  justify-content: space-between;
+}
+.list-item li{
+  width: 10%;
+}
+.list-item li:nth-child(2){
+  width: 76%;
 }
 .list-item:hover{
   background-color: rgba(241, 240, 240, 0.925);
